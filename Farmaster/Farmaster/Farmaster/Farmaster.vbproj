@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49C26D31-FD98-49DB-A7A9-9C365F1A10B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Farmaster.My.MyApplication</StartupObject>
+    <RootNamespace>Farmaster</RootNamespace>
+    <AssemblyName>Farmaster</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>8E03D61C1A1C5C1599EF0E4A3DDFE41DF0D67E88</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Farmaster_TemporaryKey.pfx</ManifestKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Farmaster_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationIcon>green.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\user\Desktop\pics\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>http://localhost/Farmaster/</UpdateUrl>
+    <SupportUrl>http://www.thevault.do.am</SupportUrl>
+    <ProductName>Farmaster</ProductName>
+    <PublisherName>HouseofHarem.inc</PublisherName>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Farmaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Farmaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.1.1.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.2.3600.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts Department\Accounts.Designer.vb">
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\Accounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\AccountsReports\SOA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SOA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\AccountsReports\SOAP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SOAP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\AccountsReports\supplyletter.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplyletter.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\Supreq.Designer.vb">
+      <DependentUpon>Supreq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\Supreq.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\Addres.Designer.vb">
+      <DependentUpon>Addres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\Addres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\Customer Accounts.Designer.vb">
+      <DependentUpon>Customer Accounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\Customer Accounts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\CustReg.Designer.vb">
+      <DependentUpon>CustReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\CustReg.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\pltsales.Designer.vb">
+      <DependentUpon>pltsales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\pltsales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animal Department\anidept.Designer.vb">
+      <DependentUpon>anidept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Animal Department\anidept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal Department\Animal_Registrar.Designer.vb">
+      <DependentUpon>Animal_Registrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Animal Department\Animal_Registrar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animal Department\DailyMilkRecord.Designer.vb">
+      <DependentUpon>DailyMilkRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Animal Department\DailyMilkRecord.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animal Department\heardlist.Designer.vb">
+      <DependentUpon>heardlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Animal Department\heardlist.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Central Information center\farmasterReports.Designer.vb">
+      <DependentUpon>farmasterReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Central Information center\farmasterReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\animalreg.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>animalreg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Accounts Department\Milksales.Designer.vb">
+      <DependentUpon>Milksales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts Department\Milksales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\danimrep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>danimrep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\daymilktrend.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>daymilktrend.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\landyield.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>landyield.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\Plantyield.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Plantyield.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Central Information center\Reports\Storagereps.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Storagereps.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Project Basics\Farmasterabout.Designer.vb">
+      <DependentUpon>Farmasterabout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project Basics\Farmasterabout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loggin\Change_Password.Designer.vb">
+      <DependentUpon>Change_Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loggin\Change_Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loggin\Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loggin\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messenger\msgReceive.Designer.vb">
+      <DependentUpon>msgReceive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\msgReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messenger\msnger.designer.vb">
+      <DependentUpon>msnger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Messenger\msnger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Basics\NEMESISsplash.Designer.vb">
+      <DependentUpon>NEMESISsplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project Basics\NEMESISsplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plantation\Farmview.Designer.vb">
+      <DependentUpon>Farmview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plantation\Farmview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plantation\Plantation.Designer.vb">
+      <DependentUpon>Plantation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plantation\Plantation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plantation\PlantationMng.Designer.vb">
+      <DependentUpon>PlantationMng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plantation\PlantationMng.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff\RegModstaff.Designer.vb">
+      <DependentUpon>RegModstaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\RegModstaff.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff.Designer.vb">
+      <DependentUpon>Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Stafflst.Designer.vb">
+      <DependentUpon>Stafflst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Stafflst.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\AllpendingR.designer.vb">
+      <DependentUpon>AllpendingR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\AllpendingR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\Depreq.Designer.vb">
+      <DependentUpon>Depreq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Depreq.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\Floatingpane.Designer.vb">
+      <DependentUpon>Floatingpane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Floatingpane.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage\iTEMS.Designer.vb">
+      <DependentUpon>iTEMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\iTEMS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\procurement.Designer.vb">
+      <DependentUpon>procurement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\procurement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reusables\minipad.Designer.vb">
+      <DependentUpon>minipad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reusables\minipad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Basics\frmaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Basics\frmaster.Designer.vb">
+      <DependentUpon>frmaster.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Project modules\connection.vb" />
+    <Compile Include="Project modules\Maintain.vb" />
+    <Compile Include="Storage\remov.Designer.vb">
+      <DependentUpon>remov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\remov.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\RequestProc.Designer.vb">
+      <DependentUpon>RequestProc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\RequestProc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Storage\Restock.Designer.vb">
+      <DependentUpon>Restock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Restock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accounts Department\Accounts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Accounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\AccountsReports\SOA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SOA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\AccountsReports\SOAP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SOAP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\AccountsReports\supplyletter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>supplyletter.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\Supreq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Supreq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\Addres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Addres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\Customer Accounts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Customer Accounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\CustReg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\pltsales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>pltsales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal Department\anidept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>anidept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal Department\Animal_Registrar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Animal_Registrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal Department\DailyMilkRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DailyMilkRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal Department\heardlist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>heardlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\farmasterReports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>farmasterReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\animalreg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>animalreg.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounts Department\Milksales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Milksales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\danimrep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>danimrep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\daymilktrend.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>daymilktrend.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\landyield.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>landyield.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\Plantyield.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Plantyield.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central Information center\Reports\Storagereps.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Storagereps.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Basics\Farmasterabout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Farmasterabout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loggin\Change_Password.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Change_Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loggin\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messenger\msgReceive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>msgReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messenger\msnger.resx">
+      <DependentUpon>msnger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Basics\NEMESISsplash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NEMESISsplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plantation\Farmview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Farmview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plantation\Plantation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Plantation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plantation\PlantationMng.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlantationMng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\RegModstaff.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegModstaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Stafflst.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Stafflst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\AllpendingR.resx">
+      <DependentUpon>AllpendingR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Depreq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Depreq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Floatingpane.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Floatingpane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\iTEMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>iTEMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\procurement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>procurement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reusables\minipad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>minipad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Basics\frmaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\remov.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>remov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\RequestProc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RequestProc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Restock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Restock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Farmaster_TemporaryKey.pfx" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="green.ico" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\minui.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
